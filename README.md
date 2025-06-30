@@ -8,13 +8,13 @@ https://ugac-assignment-three.vercel.app/
 
 **Tech Stack**
 
--Next.js 15
+-Next.js with App Router
 
--React
+-React useState & useEffect
 
--LocalStorage (no backend used)
+-LocalStorage for saving data(no backend used)
 
--CSS (no Tailwind)
+-Plain CSS (no Tailwind)
 
 ---
 
@@ -28,7 +28,7 @@ https://ugac-assignment-three.vercel.app/
 
 -See all your tasks in a list
 
--Tasks saved in your browser, even if you reload 
+-Tasks saved in your browser, even if you reload tasks persists on dashboard.
 
 Each task has:
 
@@ -47,7 +47,25 @@ Each task has:
 
 ---
 
-**How Data is Stored**
+**Pages**
+
+Route  
+
+/
+
+This is the homepage .i.e. Dashboard. You will see a list of task you created
+
+/create
+
+This is the "Add Task" page, you will get a form to fill in and create a new task
+
+
+/task/[id]
+
+It is a dynamic route, it changes based on which task you are editing.
+This page shows the edit form with pre-filled values for that specific task
+
+**How Data is Stored :**
 
 I used localStorage to store all tasks. So if you refresh, your tasks won’t go away.
 (but if you clear your browser cache, it will)
